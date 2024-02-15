@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    width: fit-content;
+    margin: 40px auto 100px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#13ADC7, #6978D1, #945DD6);
+    border-radius: 30px;
+}
+
+#list-group .list {
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navbar span .logo {
+    padding-top: 5px;
+}
+
+/* COMMON CSS FOR EVERY SECTION */
+.sections-group {
+    width: 80%;
+    margin: auto;
+}
+
+/* First Section */
+#first-section {
+    display: flex;
+}
+
+#left {
+    width: 58%;
+}
+
+#first-section .h1-text:nth-child(1) {
+    padding-bottom: 30px;
+}
+
+#first-section .h1-text {
+    font-size: 70px;
+}
+
+#first-section p {
+    font-size: 15px;
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right img {
+    width: 65%;
+}
+
+
+
+/* Second Section */
+.second-section{
+    margin-top: 125px;
+}
+
+.second-section #skills{
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 22%;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.second-section #skills .skill-group{
+    display: grid;
+    grid-row-gap: 4px;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    transition: all 0.2s ease-in;
+}
+
+.second-section #skills img{
+    width: 140px;
+    transition: all 0.2s ease-in;
+    opacity: .8;
+}
+
+.second-section #skills .skill-group .unique-img{
+    width: 130px;
+    border-radius: 10px;
+}
+
+.second-section #skills .skill-group > span{
+    text-align: center;
+    color: #666262;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* Third Section */
+.third-section {
+    margin-top: 125px;
+}
+
+/* First and Third Project */
+#project1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.third-section .project1-left{
+    width: 40%;
+    padding: 20px;
+    margin-top: 40px;
+    background: #282B42;
+    border-radius: 30px 10px;
+    border: 2px solid whitesmoke;
+}
+
+.third-section .project1-left img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.third-section .project1-right{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 212px;
+}
+
+.third-section .project1-right h4 {
+    font-size: 35px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    transition: all .2s;
+    width: fit-content;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.third-section .project1-right:hover h4{
+    letter-spacing: 5px;
+}
+/* button css written in second css file */
+
+
+
+
+/* Second Project */
+#project2{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.third-section .project2-right{
+    width: 40%;
+    padding: 20px;
+    margin-top: 40px;
+    background: #282B42;
+    border-radius: 30px 10px;
+    border: 2px solid whitesmoke;
+}
+
+.third-section .project2-right img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.third-section .project2-left{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+}
+
+.third-section .project2-left h4 {
+    font-size: 35px;
+    margin: 20px 0;
+    padding: 5px;
+    transition: all .2s;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.third-section .project2-left:hover h4{
+    letter-spacing: 2px;
+}
+/* button css written in second css file */
+
+
+
+/* Footer Section */
+#contact {
+    padding: 40px;
+    padding-bottom: 0;
+    margin-top: 120px;
+}
+
+footer h1 {
+    padding-bottom: 40px;
+}
+
+footer div {
+    position: relative;
+    width: max-content;
+    margin: auto;
+}
+
+/* footer #pose-dress::before{
+    content: '';
+    position: absolute;
+    filter: blur(217.5px);
+    backdrop-filter: blur(275px);
+    border-radius: 400px;
+    background: linear-gradient(#13ADC7, #6978D1, #945DD6);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+} */
+
+footer .dress {
+    position: absolute;
+    top: 78px;
+    left: 0;
+}
+
+.pose{
+    position: relative;
+    filter: drop-shadow(0px 2px 8px #fff);
+}
+
+.websites{
+    margin-top: 55px;
+}
+
+.websites a{
+    display: inline-block;
+    padding: 20px 45px;
+}

@@ -1,0 +1,50 @@
+button{
+    width: 155px;
+    height: 44px;
+    position: relative;
+    border-radius: 27px;
+    margin-top: 15px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+    z-index: 5;
+}
+
+button::before{
+    top: -10px;
+    left: -160px;
+    content: '';
+    position: absolute;
+    width: 155px;
+    height: 75px;
+    border-radius:0 40% ;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    z-index: -100;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px #13ADC7;
+    letter-spacing: 2px;
+}
+
+button:hover::before{
+    left: 0;
+}
+
+.second-section #skills .skill-group:hover{
+    scale: 1.2;
+}
+
+.second-section #skills .skill-group:hover > img{
+    opacity: 1;
+}
+
+.second-section #skills .skill-group:hover > span{
+    color: aliceblue;
+}
